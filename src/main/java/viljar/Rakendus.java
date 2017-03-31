@@ -1,5 +1,5 @@
 package jaagup;
-
+import kuvamine.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 public class Rakendus {
-	@RequestMapping("/algus")
-    String tervitusfunktsioon() {
-        return "Ahoi!";
+	@RequestMapping("/aprilliuusid")
+	string uudis1(String pealkiri, String sisu){
+		PealkirjagaTekst pt1=new PealkirjagaTekst(pealkiri, sisu);
+		return "<!doctype html><html><body>"+pt1.html()+"</div></html>";
+	}
     }
 	@RequestMapping("/tervita")
 	    String tervitusfunktsioon3(String eesnimi) {
