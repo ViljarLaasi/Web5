@@ -10,9 +10,9 @@ public class Rakendus {
 	@RequestMapping("/aprilliuusid")
 	string uudis1(String pealkiri, String sisu){
 		PealkirjagaTekst pt1=new PealkirjagaTekst(pealkiri, sisu);
-		return "<!doctype html><html><body>"+pt1.html()+"</div></html>";
+		return "<!doctype html><html><body>"+pt1.html()+"</body></html>";
 	}
-    
+
 	@RequestMapping("/tervita")
 	    String tervitusfunktsioon3(String eesnimi) {
 	        return "Tere," +eesnimi;
