@@ -12,7 +12,7 @@ public class Rakendus {
 		PealkirjagaTekst pt1=new PealkirjagaTekst(pealkiri, sisu);
 		return "<!doctype html><html><body>"+pt1.html()+"</div></html>";
 	}
-    }
+    
 	@RequestMapping("/tervita")
 	    String tervitusfunktsioon3(String eesnimi) {
 	        return "Tere," +eesnimi;
