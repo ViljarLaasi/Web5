@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class Rakendus {
 	@RequestMapping("/aprilliuusid")
-	string uudis1(String pealkiri, String sisu){
+	String uudis1(String pealkiri, String sisu){
 		PealkirjagaTekst pt1=new PealkirjagaTekst(pealkiri, sisu);
 		return "<!doctype html><html><body>"+pt1.html()+"</body></html>";
 	}
