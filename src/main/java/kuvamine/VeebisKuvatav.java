@@ -1,3 +1,4 @@
+package kuvamine;
 /**
 *Kuvab infot otse htmli sees
 */
