@@ -1,3 +1,4 @@
+package kuvamine;
 public class PealkirjagaTekst implements VeebisKuvatav{
   VeebiTekst pealkiri;
   VeebiTekst sisu;

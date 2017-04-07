@@ -1,9 +1,10 @@
+package kuvamine;
 public class VeebiTekst implements VeebisKuvatav{
   String sisu;
   public VeebiTekst(String uusSisu){
     sisu=uusSisu;
   }
   public String html(){
-      return sisu.replace("<","@it;").replace(">", "@gt;");
+      return sisu.replace("<","&it;").replace(">", "&gt;");
   }
 }
