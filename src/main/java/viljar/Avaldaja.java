@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 public class Avaldaja {
-  @RequestMapping("omahind")
+  @RequestMapping("/omahind")
     String Omahind(String anum, String mark ){
       double roo;
       double maht;
