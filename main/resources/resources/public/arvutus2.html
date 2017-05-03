@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<title>Arvutamine</title>
+  <script>
+  var yhendus=new XMLHttpRequest();
+  yhendus.onreadystatechange=andmedSaabusid;
+  function arvutamine(){
+    var a1=document.getElementById("k1").values;
+    var a2=document.getElementById("k2").values;
+
+    console.log(a1);
+    console.log(a3);
+
+    var aadress="/omahind?a1="+a1+"&a2="+a2+;
+    yhendus.open("GET", aadress, true);
+    yhendus.send();
+  }
+  function andmedSaabusid(){
+    document.getElementById("vastus").innerHTML=yhendus.responseText;
+  }
+
+  </script>
+</head>
+<h1>Massi koos joogiga.</h1>
+<body>
+  <select id=k1>
+  <option value="Plast" checked> Plastik</option>
+  <option value="Klaas" > Klaas</option>
+</select>
+  <br></br>
+  <select id=k2>
+  <option value="olu"> Õlu</option>
+  <option value="vein"> Vein</option>
+  <option value="vesi"> Vesi</option>
+  <option value="">Tühi</option>
+</select>
+
+
+  <input type="button" value="Joogipudeli mass koos joogiga" onclick="arvutamine()"/>
+  <div id="vastus">Vastus</div>
+</body>
+</html>
