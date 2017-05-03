@@ -1,4 +1,4 @@
-﻿package viljar;
+package viljar;
 import java.io.*;
 import java.util.EnumSet;
 import org.springframework.boot.SpringApplication;
