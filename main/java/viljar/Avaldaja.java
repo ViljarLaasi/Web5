@@ -1,4 +1,4 @@
-package viljar;
+﻿package viljar;
 import java.io.*;
 import java.util.EnumSet;
 import org.springframework.boot.SpringApplication;
@@ -45,7 +45,7 @@ public class Avaldaja {
       }
       */
 public static void main(String[] args)throws IOException{
-  System.getProperties().put("server.port", 2497);
+ /* System.getProperties().put("server.port", 2497);*/
   SpringApplication.run(Geen.class, args);
 }
 }
